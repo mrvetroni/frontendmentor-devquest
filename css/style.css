@@ -1,0 +1,134 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    background: url('../images/bg-desktop.svg') center center no-repeat, var(--primary-color);
+    background-size: cover;
+}
+.header{
+    padding: 50px;
+}
+.header img{
+    width: 200px;
+}
+main .hero{
+    width: 100%;
+    height: 100%;
+}
+.container-hero{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 100px;
+}
+.container-hero img{
+    width: 100%;
+    height: 100%;
+    max-width: 1020px;
+    min-width: 300px;
+    
+}
+.container-hero .info-title{
+    padding: 50px;
+    max-width: 550px;
+    min-width: 350px;
+    color: white;
+    font-size: 1.7rem;
+}
+.container-hero .title{
+    min-width: 300px;
+    font-weight: 600;
+    font-size: 2.7rem;
+    margin-bottom: 30px;
+}
+.container-hero p{
+    min-width: 300px;
+    max-width: 450px;
+    margin-bottom: 40px;
+}
+.container-hero .btn{
+    padding: 12px 50px;
+    border-radius: 50px;
+    background-color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #000;
+    transition: 0.3s;
+}
+.container-hero .btn:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--secondary-color);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+.footer{
+    height: 20vh;
+    position: relative;
+}
+.footer .social{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+.footer ul{
+    display: flex;
+}
+.footer ul li a{
+    padding: 8px;
+   
+}
+.footer ul li i{
+    padding: 15px;
+    font-size: 2.2rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+}
+.footer ul li i:hover{
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+.footer .fa-instagram{
+    padding: 15px 18px;
+}
+.footer .fa-facebook-f{
+    padding: 15px 21px;
+}
+@media (max-width: 1020px){
+    .container-hero{
+        align-items: center;
+    }
+}
+@media (max-width: 788px){
+    .container-hero{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .container-hero .info-title p{
+        margin-bottom: 50px;
+    }
+    .footer{
+        width: 100%;
+        
+    }
+    .footer .social{
+        position: inherit;
+        display: flex;
+        justify-content: center;
+        bottom: 0;
+        left: 0;  
+    }
+}
+@media (min-width: 1020px){
+    .container-hero .title{
+        font-size: 3.2rem;
+    }
+    .container-hero p{
+        margin-bottom: 40px;
+        font-size: 1.8rem;
+
+    }
+}
+
